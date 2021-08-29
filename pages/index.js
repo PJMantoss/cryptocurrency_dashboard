@@ -28,8 +28,8 @@ export default function Home(props) {
         <tbody>
           {data.map(coin => (
             <tr key={coin.id}>
-              <td>{}</td>
-              <td>{}</td>
+              <td>{coin.symbol}</td>
+              <td>{coin.price_change_percentage_24}</td>
               <td>{}</td>
               <td>{}</td>
             </tr>
