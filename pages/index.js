@@ -31,7 +31,7 @@ export default function Home(props) {
           {data.map(coin => (
             <tr key={coin.id}>
               <td>{coin.symbol.toUpperCase()}</td>
-              <td>{coin.price_change_percentage_24}</td>
+              <td>{coin.price_change_percentage_24h}</td>
               <td>{coin.current_price}</td>
               <td>{coin.market_cap}</td>
             </tr>
