@@ -25,6 +25,16 @@ export default function Home(props) {
             <th>Market Cap</th>
           </tr>
         </thead>
+        <tbody>
+          {data.map(coin => (
+            <tr key={coin.id}>
+              <td>{}</td>
+              <td>{}</td>
+              <td>{}</td>
+              <td>{}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   )
