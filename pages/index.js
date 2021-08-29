@@ -9,7 +9,7 @@ export default function Home(props) {
   //console.log(data);
 
   const formatPercent = num => `${new Number(num).toFixed(2)}%`;
-  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -43,7 +43,7 @@ export default function Home(props) {
                     'text-sucess'
                     ) : 'text-danger'}
                 >
-                  {coin.price_change_percentage_24h}
+                  {formatPercent(coin.price_change_percentage_24h)}
                 </span>
               </td>
               <td>{coin.current_price}</td>
