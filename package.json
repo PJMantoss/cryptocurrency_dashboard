@@ -1,5 +1,6 @@
 {
   "name": "cryptocurrency_dashboard",
+  "homepage": "https://pjmantoss.github.io/cryptocurrency_dashboard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
