@@ -16,7 +16,9 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <table>
+      <h1>Cryptocurrency Dashboard</h1>
+
+      <table className="table">
         <thead>
           <tr>
             <th>Symbol</th>
