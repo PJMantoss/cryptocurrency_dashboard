@@ -15,6 +15,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <main className={styles.main}>
       <h1>Cryptocurrency Dashboard</h1>
 
       <table className="table">
@@ -37,6 +38,7 @@ export default function Home(props) {
           ))}
         </tbody>
       </table>
+      </main>
     </div>
   )
 }
