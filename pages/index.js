@@ -12,8 +12,8 @@ export default function Home(props) {
 
   const formatDollar = (number, maximumSignificantDigits) => 
       new Intl.NumberFormat('en-Us', {
-        style: '',
-        currency: '',
+        style: 'currency',
+        currency: 'usd',
         maximumSignificantDigits
       }).format(number);
 
