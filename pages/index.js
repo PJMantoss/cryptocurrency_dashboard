@@ -34,7 +34,15 @@ export default function Home(props) {
                 <img src={coin.image} style={{width: 25, height: 25, marginRight: 10}} />
                 {coin.symbol.toUpperCase()}
               </td>
-              <td>{coin.price_change_percentage_24h}</td>
+              <td>
+                <span
+                  className={coin.price_change_percentage_24h > 0 ? (
+                    'text-sucess'
+                    ) : 'text-danger'}
+                >
+                  {coin.price_change_percentage_24h}
+                </span>
+              </td>
               <td>{coin.current_price}</td>
               <td>{coin.market_cap}</td>
             </tr>
