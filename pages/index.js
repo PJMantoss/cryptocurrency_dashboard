@@ -72,5 +72,8 @@ export default function Home() {
 }
 
 export async function getServerSideProps(context){
-  const result = await coinGeckoClient().coins.markets();
+  const params = {
+    order: CoinGecko.ORDER.MARKET_CAP_DESC
+  };
+  const result = await coinGeckoClient().coins.markets({params});
 }
