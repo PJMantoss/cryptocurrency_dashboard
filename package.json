@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.1.0",
     "coingecko-api": "^1.0.10",
     "next": "11.1.0",
     "react": "17.0.2",
