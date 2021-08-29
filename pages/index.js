@@ -10,6 +10,9 @@ export default function Home(props) {
 
   const formatPercent = num => `${new Number(num).toFixed(2)}%`;
 
+  const formatDollar = (number, maximumSignificantDigits) => 
+      new Intl.NumberFormat('en-Us', {}).format(number);
+
   return (
     <div className={styles.container}>
       <Head>
