@@ -31,7 +31,7 @@ export default function Home(props) {
           {data.map(coin => (
             <tr key={coin.id}>
               <td>
-                <img src={coin.image} style={} />
+                <img src={coin.image} style={{width: 25, height: 25, marginRight: 10}} />
                 {coin.symbol.toUpperCase()}
               </td>
               <td>{coin.price_change_percentage_24h}</td>
