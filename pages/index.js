@@ -30,8 +30,8 @@ export default function Home(props) {
             <tr key={coin.id}>
               <td>{coin.symbol}</td>
               <td>{coin.price_change_percentage_24}</td>
-              <td>{}</td>
-              <td>{}</td>
+              <td>{coin.current_price}</td>
+              <td>{coin.market_cap}</td>
             </tr>
           ))}
         </tbody>
